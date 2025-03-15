@@ -17,9 +17,9 @@ actor {
   };
 
   //Função para subtrair
-  public query func subNum(num1 : Nat, num2 : Nat) : async Text{
+  public query func subNum(num1 : Nat, num2 : Nat) : async Text {
     //Evitar erros caso o usuário insira uma subtração sem resultado no conjunto natural
-    if (num1 < num2){
+    if (num1 < num2) {
       return "Resultado não é natural";
     };
     //Subtração normal caso o primeiro número seja maior
@@ -27,7 +27,7 @@ actor {
   };
 
   //Função para multiplicação
-  public query func multNum(num1 : Nat, num2 : Nat) : async Nat{
+  public query func multNum(num1 : Nat, num2 : Nat) : async Nat {
     return num1 * num2;
   };
 
